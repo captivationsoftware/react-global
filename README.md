@@ -8,37 +8,27 @@ A simple React component for exposing global properties on your page. This libra
 npm install react-global
 ```
 
-## Code Example
+## Code Examples
 
-App.jsx
+### Setting Global Values
+
 ```js
-var React = require('react'),
-  Global = require('react-global');
+var Global = require('react-global');
 
-var Global = React.createClass({
-  render: function() {
-    return (
-      <html>
-        <head>
-          ...
-          <Global values={{
-            FOO: this.props.foo,
-            BAR: this.props.bar
-          }} />
-        </head>
-        <body>
-          ...
-        </body>
-      </html>
-    );
-  },
-});
+<Global values={{
+  FOO: this.props.foo,
+  BAR: this.props.bar
+}} />
 
 ```
 
+### Getting Global Values
+
+Global.get('FOO')
+
 ## Contributors
 
-Captivation Software (@teamcaptivation), inspired by @theadam
+Implementation by Captivation Software (@teamcaptivation), designed in part by @theadam
 
 By all means, if you see room for improvement, let us know!
 
