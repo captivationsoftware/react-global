@@ -74,8 +74,7 @@ if (window && document) {
 
 ```
 
-The global variables are set during server-side evaluation, where the values passed to <Global /> get wrapped in a script tag and inserted into the DOM. Then, right before mounting the same App in the browser, we echo these variables from the DOM/window as arguments to the App during its invocation. A simple but useful pattern.
-
+A simple but useful pattern!
 
 ## Contributors
 
