@@ -27,6 +27,12 @@ var Global = require('react-global');
 Global.get('FOO')
 ```
 
+Note: every Global variable that you declare will actually be available on the window object as a true browser global.
+```js
+  Global.get('FOO') === window.FOO === window['FOO'] === FOO
+    
+```
+
 ## Contributors
 
 Implementation by Captivation Software (@teamcaptivation), overall design by Adam Nalisnick (@theadam4257)
