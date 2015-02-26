@@ -1,0 +1,106 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/bin/npm', 'publish' ]
+2 info using npm@1.4.23
+3 info using node@v0.10.25
+4 verbose node symlink /usr/bin/node
+5 verbose publish [ '.' ]
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /home/developer/.npm/3a52ce78-.lock
+11 verbose tar pack [ '/home/developer/.npm/react-global/0.1.5/package.tgz', '.' ]
+12 verbose tarball /home/developer/.npm/react-global/0.1.5/package.tgz
+13 verbose folder .
+14 info prepublish react-global@0.1.5
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. /home/developer/.npm/1f1177db-tar.lock
+17 silly lockFile faf2809d-m-react-global-0-1-5-package-tgz tar:///home/developer/.npm/react-global/0.1.5/package.tgz
+18 verbose lock tar:///home/developer/.npm/react-global/0.1.5/package.tgz /home/developer/.npm/faf2809d-m-react-global-0-1-5-package-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile faf2809d-m-react-global-0-1-5-package-tgz tar:///home/developer/.npm/react-global/0.1.5/package.tgz
+22 silly lockFile faf2809d-m-react-global-0-1-5-package-tgz tar:///home/developer/.npm/react-global/0.1.5/package.tgz
+23 silly lockFile f4ec94ad-r-npm-react-global-0-1-5-package /home/developer/.npm/react-global/0.1.5/package
+24 verbose lock /home/developer/.npm/react-global/0.1.5/package /home/developer/.npm/f4ec94ad-r-npm-react-global-0-1-5-package.lock
+25 silly lockFile f4ec94ad-r-npm-react-global-0-1-5-package /home/developer/.npm/react-global/0.1.5/package
+26 silly lockFile f4ec94ad-r-npm-react-global-0-1-5-package /home/developer/.npm/react-global/0.1.5/package
+27 silly lockFile 3a52ce78- .
+28 silly lockFile 3a52ce78- .
+29 silly publish { name: 'react-global',
+29 silly publish   version: '0.1.5',
+29 silly publish   description: '<Global /> component for React',
+29 silly publish   main: './index',
+29 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+29 silly publish   repository:
+29 silly publish    { type: 'git',
+29 silly publish      url: 'https://github.com/captivationsoftware/react-global' },
+29 silly publish   keywords: [ 'React', 'Constant' ],
+29 silly publish   author: { name: 'Captivation Software, c/o @theadam' },
+29 silly publish   license: 'MIT',
+29 silly publish   bugs: { url: 'https://github.com/captivationsoftware/react-global/issues' },
+29 silly publish   homepage: 'https://github.com/captivationsoftware/react-global',
+29 silly publish   peerDependencies: { react: '0.x' },
+29 silly publish   readme: 'react-global\n============\n\nA simple React component for exposing global properties on your page. This library is particularly useful for isomorphic apps, where a set of values must be shared between the server and client (e.g. passing initialization variables to third-party libraries).\n\n## Installation\n```sh\nnpm install react-global\n```\n\n## Code Examples\n\n### Setting Global Values\n\n```js\nvar Global = require(\'react-global\');\n\n<Global values={{\n  FOO: this.props.foo,\n  BAR: this.props.bar\n}} />\n\n```\n\n### Getting Global Values\n```js\nGlobal.get(\'FOO\')\n```\n\nNote: every Global variable that you declare will actually be available on the window object as a true browser global.\n```js\n  Global.get(\'FOO\') === window.FOO === window[\'FOO\'] === FOO\n    \n```\n\n## Contributors\n\nImplementation by Captivation Software (@teamcaptivation), overall design by Adam Nalisnick (@theadam4257)\n\nBy all means, if you see room for improvement, let us know!\n\n## License\n\nMIT License\n\n',
+29 silly publish   readmeFilename: 'README.md',
+29 silly publish   gitHead: '42a546e29d99bd83cddbad22871da79671c63f5c',
+29 silly publish   _id: 'react-global@0.1.5',
+29 silly publish   _shasum: '7d75f9d506dc46f07ea58010dc9644b30633c285',
+29 silly publish   _from: '.' }
+30 verbose request where is /react-global
+31 verbose request registry https://registry.npmjs.org/
+32 verbose request id 65ea4b09af9f2975
+33 verbose url raw /react-global
+34 verbose url resolving [ 'https://registry.npmjs.org/', './react-global' ]
+35 verbose url resolved https://registry.npmjs.org/react-global
+36 verbose request where is https://registry.npmjs.org/react-global
+37 info trying registry request attempt 1 at 07:58:01
+38 http PUT https://registry.npmjs.org/react-global
+39 http 403 https://registry.npmjs.org/react-global
+40 verbose headers { date: 'Thu, 26 Feb 2015 12:58:01 GMT',
+40 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+40 verbose headers   'content-type': 'application/json',
+40 verbose headers   'cache-control': 'max-age=60',
+40 verbose headers   'content-length': '3502',
+40 verbose headers   'accept-ranges': 'bytes',
+40 verbose headers   via: '1.1 varnish',
+40 verbose headers   'x-served-by': 'cache-iad2135-IAD',
+40 verbose headers   'x-cache': 'MISS',
+40 verbose headers   'x-cache-hits': '0',
+40 verbose headers   'x-timer': 'S1424955481.206570,VS0,VE332',
+40 verbose headers   'keep-alive': 'timeout=10, max=50',
+40 verbose headers   connection: 'Keep-Alive' }
+41 error publish Failed PUT 403
+42 error Error: forbidden cannot modify pre-existing version: 0.1.5
+42 error old={"name":"react-global","version":"0.1.5","description":"<Global /> component for React","main":"./index","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"repository":{"type":"git","url":"https://github.com/captivationsoftware/react-global"},"keywords":["React","Constant"],"author":{"name":"Captivation Software, c/o @theadam"},"license":"MIT","bugs":{"url":"https://github.com/captivationsoftware/react-global/issues"},"homepage":"https://github.com/captivationsoftware/react-global","peerDependencies":{"react":"0.x"},"_id":"react-global@0.1.5","_shasum":"3c3123aa7dc0477851cb0b8b375331a2e4cf978e","_from":".","_npmVersion":"1.4.23","_npmUser":{"name":"dbarbalato","email":"dbarbalato@gmail.com"},"maintainers":[{"name":"dbarbalato","email":"dbarbalato@gmail.com"}],"dist":{"shasum":"3c3123aa7dc0477851cb0b8b375331a2e4cf978e","tarball":"http://registry.npmjs.org/react-global/-/react-global-0.1.5.tgz"}}
+42 error new={"name":"react-global","version":"0.1.5","description":"<Global /> component for React","main":"./index","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"repository":{"type":"git","url":"https://github.com/captivationsoftware/react-global"},"keywords":["React","Constant"],"author":{"name":"Captivation Software, c/o @theadam"},"license":"MIT","bugs":{"url":"https://github.com/captivationsoftware/react-global/issues"},"homepage":"https://github.com/captivationsoftware/react-global","peerDependencies":{"react":"0.x"},"readme":"react-global\u000a============\u000a\u000aA simple React component for exposing global properties on your page. This library is particularly useful for isomorphic apps, where a set of values must be shared between the server and client (e.g. passing initialization variables to third-party libraries).\u000a\u000a## Installation\u000a```sh\u000anpm install react-global\u000a```\u000a\u000a## Code Examples\u000a\u000a### Setting Global Values\u000a\u000a```js\u000avar Global = require('react-global');\u000a\u000a<Global values={{\u000a  FOO: this.props.foo,\u000a  BAR: this.props.bar\u000a}} />\u000a\u000a```\u000a\u000a### Getting Global Values\u000a```js\u000aGlobal.get('FOO')\u000a```\u000a\u000aNote: every Global variable that you declare will actually be available on the window object as a true browser global.\u000a```js\u000a  Global.get('FOO') === window.FOO === window['FOO'] === FOO\u000a    \u000a```\u000a\u000a## Contributors\u000a\u000aImplementation by Captivation Software (@teamcaptivation), overall design by Adam Nalisnick (@theadam4257)\u000a\u000aBy all means, if you see room for improvement, let us know!\u000a\u000a## License\u000a\u000aMIT License\u000a\u000a","readmeFilename":"README.md","gitHead":"42a546e29d99bd83cddbad22871da79671c63f5c","_id":"react-global@0.1.5","_shasum":"7d75f9d506dc46f07ea58010dc9644b30633c285","_from":".","_npmVersion":"1.4.23","_npmUser":{"name":"dbarbalato","email":"dbarbalato@gmail.com"},"maintainers":[{"name":"dbarbalato","email":"dbarbalato@gmail.com"}],"dist":{"shasum":"7d75f9d506dc46f07ea58010dc9644b30633c285","tarball":"http://registry.npmjs.org/react-global/-/react-global-0.1.5.tgz"}}: react-global
+42 error     at RegClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:300:14)
+42 error     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:238:65)
+42 error     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:123:22)
+42 error     at Request.EventEmitter.emit (events.js:98:17)
+42 error     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:893:14)
+42 error     at Request.EventEmitter.emit (events.js:117:20)
+42 error     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:844:12)
+42 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+42 error     at _stream_readable.js:920:16
+42 error     at process._tickCallback (node.js:415:13)
+43 error If you need help, you may report this *entire* log,
+43 error including the npm and node versions, at:
+43 error     <http://github.com/npm/npm/issues>
+44 error System Linux 3.13.0-44-generic
+45 error command "node" "/usr/bin/npm" "publish"
+46 error cwd /home/developer/Projects/react-global
+47 error node -v v0.10.25
+48 error npm -v 1.4.23
+49 verbose exit [ 1, true ]
