@@ -1,0 +1,26 @@
+{
+  "name": "react-global",
+  "version": "0.1.5",
+  "description": "<Global /> component for React",
+  "main": "./index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/captivationsoftware/react-global"
+  },
+  "keywords": [
+    "React",
+    "Constant"
+  ],
+  "author": "Captivation Software, c/o @theadam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/captivationsoftware/react-global/issues"
+  },
+  "homepage": "https://github.com/captivationsoftware/react-global",
+  "peerDependencies": {
+    "react": "0.x"
+  }
+}
