@@ -29,7 +29,7 @@ Global.get('FOO')
 
 ## Contributors
 
-Implementation by Captivation Software (@teamcaptivation), designed in part by @theadam
+Implementation by Captivation Software (@teamcaptivation), overall design by Adam Nalisnick (@theadam4257)
 
 By all means, if you see room for improvement, let us know!
 
