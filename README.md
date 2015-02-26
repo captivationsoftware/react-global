@@ -23,8 +23,9 @@ var Global = require('react-global');
 ```
 
 ### Getting Global Values
-
+```js
 Global.get('FOO')
+```
 
 ## Contributors
 
