@@ -41,7 +41,7 @@ var React = require('React'),
   App = require('./views/App.jsx');
 
 app.get('/', function(req, res) {
-  var markup = React.rendeToString(<App clientApiKey={config.client.api.key} />);
+  var markup = React.renderToString(<App clientApiKey={config.client.api.key} />);
   res.send('<!DOCTYPE html>' + markup);
 });
 
@@ -68,13 +68,13 @@ var App = React.createClass({
 });
 
 // Mount the app if in the browser
-if (typeof window !== 'undefined' && typeof document !== 'undefined') {
+if (window && document) {
   React.render(<App clientApiKey={Global.get('CLIENT_API_KEY')} />
 }
 
 ```
 
-The global variable get set server-side, as the values passed to <Global /> get wrapped in a script tag. Then, right before mounting the same App in the browser, we echo the value back into the app by reading it from the window. A simple but useful pattern.
+The global variables are set during server-side evaluation, where the values passed to <Global /> get wrapped in a script tag and inserted into the DOM. Then, right before mounting the same App in the browser, we echo these variables from the DOM/window as arguments to the App during its invocation. A simple but useful pattern.
 
 
 ## Contributors
