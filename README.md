@@ -78,7 +78,7 @@ A simple but useful pattern!
 
 ## Contributors
 
-Implementation by Captivation Software (@teamcaptivation), overall design by Adam Nalisnick (@theadam4257)
+Implementation by Captivation Software (@teamcaptivation), overall design by Adam Nalisnick ([@theadam](https://github.com/theadam))
 
 By all means, if you see room for improvement, let us know!
 
