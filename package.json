@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/captivationsoftware/react-global",
   "peerDependencies": {
-    "react": "0.x"
+    "react": "0.x || ^x.0.0"
   }
 }
